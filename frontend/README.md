@@ -1,13 +1,13 @@
 # search API 
 ## request
-```{
+``{
     "prefecture": "string"
     "event_type": "string",
     "inn_type": "string"
-}```
+}``
 
 ## response
-```{
+``{
     "spot":[
         {
             "event_name": "string",
@@ -24,4 +24,4 @@
             "img_url": "string"
         },
     ]
-}```
+}``
