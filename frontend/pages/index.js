@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link';
+
 
 export default function Home() {
   return (
@@ -12,14 +14,34 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+
+      {/* <Image src="/top_image.jpeg" alt="Traveler" width={300} height={100} /> */}
+
+      <div className="top">
+        <img src="/top_image.jpg" alt="top_image" style="width:100%;"/>
         <h1 className={styles.title}>
           お一人様旅行をもっと手軽に
         </h1>
-
+      </div>
+        
         <p className={styles.description}>
           1人で旅行に行きたいけど，計画するのが面倒．<br/>
           そう思ったら「お一人様旅行プランナー」を使ってみませんか？
         </p>
+
+        <Link href="/search">
+        <button class="button">検索してみる</button>
+        </Link>
+
+        <p className={styles.description}>
+          <h1>会員登録のメリット</h1><br/>
+          <ul>
+            <li>お気に入り登録できる</li>
+            <li>ボタンひとつで完全決済</li>
+            <li>旅程やチケットがアプリ一つに</li>
+          </ul> 
+        </p>
+        
       </main>
 
       <footer className={styles.footer}>
