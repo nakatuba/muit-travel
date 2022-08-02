@@ -3,14 +3,17 @@ import Link from 'next/link';
 export default function Header() {
   return (
     <div className="header">
-        <p>
+        <ul>
             <Link href="/">
-            <a>Home</a>
+                <a>ホーム</a>
             </Link>
-        </p>
-        <p>
-        お一人様旅行プランナー
-        </p>
+            <Link href="/login">
+                <a>ログイン</a>
+            </Link>
+            <Link href="/register">
+                <a>会員登録</a>
+            </Link>
+        </ul>
     </div>
   );
 }

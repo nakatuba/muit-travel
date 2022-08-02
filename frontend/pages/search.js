@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link';
 
 export default function Search() {
     return (
@@ -75,10 +76,15 @@ export default function Search() {
                 <p className={styles.condition}>イベントタイプ</p>
                 <p>
                     <input type="checkbox" id="outdoor" name="outdoor"/><label for="outdoor">アウトドア</label>
-                    <input type="checkbox" id="outdoor" name="outdoor"/><label for="outdoor">インドア</label>
+                    <input type="checkbox" id="indoor" name="indoor"/><label for="indoor">インドア</label>
                     <input type="checkbox" id="outdoor" name="outdoor"/><label for="outdoor">美食</label>
                     <input type="checkbox" id="outdoor" name="outdoor"/><label for="outdoor">温泉</label>
                 </p>
+            </div>
+            <div>
+            <Link href="/search_result">
+                <button class="button">検索</button>
+            </Link>
             </div>
         </main>
       </div>

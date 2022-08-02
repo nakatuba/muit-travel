@@ -2,16 +2,17 @@ html,
 .header {
   padding: 10;
   margin: 10;
-  height: 100;
+  height: 40px;
   color: antiquewhite;
   background-color: darkolivegreen;
   flex-direction: row;
 }
 .top {
   height: 500;
-  width: max-content;
-  background-image: url(/frontend/public/top_image.jpeg);
+  min-width: 100%;
+  background-image: url(../public/top_image.jpeg);
 }
+
 .button {
   background-color: #4CAF50;
   border-radius: 12px;
@@ -24,6 +25,7 @@ html,
   margin: 4px 2px;
   cursor: pointer;
 }
+
 
 body {
   padding: 0;
@@ -39,6 +41,7 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  padding: 10px;
 }
 
 * {
