@@ -20,10 +20,6 @@ export default function Home() {
           1人で旅行に行きたいけど，計画するのが面倒．<br/>
           そう思ったら「お一人様旅行プランナー」を使ってみませんか？
         </p>
-
-        <div>
-          
-        </div>
       </main>
 
       <footer className={styles.footer}>
