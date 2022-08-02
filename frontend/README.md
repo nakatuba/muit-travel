@@ -7,7 +7,7 @@
 }``
 
 ## response
-``{
+```{
     "spot":[
         {
             "event_name": "string",
@@ -24,4 +24,4 @@
             "img_url": "string"
         },
     ]
-}``
+}```
