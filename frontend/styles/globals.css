@@ -8,9 +8,9 @@ html,
   flex-direction: row;
 }
 .top {
-  height: 500;
-  min-width: 100%;
-  background-image: url(../public/top_image.jpeg);
+  position: relative;
+  text-align: center;
+  color: aliceblue;
 }
 
 .button {
@@ -28,6 +28,15 @@ html,
 
 .register {
   text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  font-weight: bold;
 }
 
 label {
