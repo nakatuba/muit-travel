@@ -26,6 +26,14 @@ html,
   cursor: pointer;
 }
 
+.spot {
+  display: flex;
+  flex-direction: row;
+}
+.spot_image {
+  margin: 20px;
+}
+
 
 body {
   padding: 0;
