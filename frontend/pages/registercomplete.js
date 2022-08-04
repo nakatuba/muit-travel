@@ -13,8 +13,11 @@ export default function RegisterComplete() {
             </Head>
             <main className={styles.main}>
 
-      
-                
+            <h1>会員登録が完了しました</h1>
+
+            <Link href="/mypage">
+                <a>マイページへ</a>
+            </Link>
 
             </main>
         </div>

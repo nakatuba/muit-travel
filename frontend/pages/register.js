@@ -41,7 +41,7 @@ export default function Register() {
                     <input type="text" name="birth" id="birth" minlength="8" maxlength="8" placeholder="20220805"/>
                 </div>
                 <p>
-                    
+
                 </p>
                 <div class="register">
                 <label for="cardlabel">カード番号</label>
@@ -58,7 +58,9 @@ export default function Register() {
                     <input type="text" name="security" id="security" placeholder="0123"/>
                 </div>
                 <div class="register">
+                <Link href="/registercomplete">
                 <button class="button">送信</button>
+                </Link>
                 </div>
                 </form>
 
