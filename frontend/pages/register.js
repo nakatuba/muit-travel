@@ -15,11 +15,26 @@ export default function Register() {
 
                 <form>
                 <div class="register">
+                <label for="namelabel">名前</label>
                     <input type="text" name="first_name" id="first_name" placeholder="例）鈴木"/>
                     <input type="text" name="last_name" id="last_name" placeholder="例）太郎"/>
                 </div>
                 <div class="register">
-                    <input class="inputs" type="email" name="email" id="email" placeholder="○○○.jp"/>
+                <label for="emaillabel">emailアドレス</label>
+                    <input type="email" name="email" id="email" placeholder="○○○@△△△.jp"/>
+                </div>
+                <div class="register">
+                <label for="passwordlabel">パスワード</label>
+                    <input type="text" name="password" id="password" placeholder="パスワード"/>
+                </div>
+                <div class="register">
+                <label for="addresslabel">住所</label>
+                    <input type="number" name="postalcode" id="postalcode" placeholder="例）000-0000"/>
+                    <input type="text" name="address" id="address" placeholder="例）東京都〇〇市△△町□□マンション＊＊号室"/>
+                </div>
+                <div class="register">
+                <label for="tellabel">電話番号(ハイフンなし)</label>
+                    <input type="number" name="tel" id="tel" placeholder="00000000000"/>
                 </div>
                 <p>
                 <button class="button">送信</button>

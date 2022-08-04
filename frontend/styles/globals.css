@@ -26,6 +26,13 @@ html,
   cursor: pointer;
 }
 
+.register {
+  text-align: center;
+}
+
+label {
+  display: block;
+ }
 
 body {
   padding: 0;
