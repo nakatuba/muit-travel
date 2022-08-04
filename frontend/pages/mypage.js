@@ -3,7 +3,10 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link';
 
-export default function MyPage() {
+
+
+export default function Mypage() {
+
     return(
         <div className={styles.container}>
             <Head>
@@ -12,6 +15,12 @@ export default function MyPage() {
             <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className={styles.main}>
+
+                <p>
+                <Link href="/search">
+                <button class="button">旅程を探す</button>
+                </Link>
+                </p>
                 
 
             </main>
