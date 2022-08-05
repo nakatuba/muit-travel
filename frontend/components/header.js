@@ -5,13 +5,13 @@ export default function Header() {
     <div className="header">
         <ul>
             <Link href="/">
-                <a>ホーム</a>
+                <a className="home-link">ホーム</a>
             </Link>
             <Link href="/login">
                 <a>ログイン</a>
             </Link>
             <Link href="/register">
-                <a>会員登録</a>
+                <a className="register-link">会員登録</a>
             </Link>
         </ul>
     </div>
