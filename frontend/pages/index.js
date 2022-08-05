@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Link from 'next/link';
-
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -26,29 +25,30 @@ export default function Home() {
         </p>
 
         <Link href="/search">
-        <button class="button">検索してみる</button>
+          <button class="button">検索してみる</button>
         </Link>
 
-        <div className={styles.description}>{/*ここタグの関係おかしい　エラー出るので要修正 */}
-          <h1>会員登録のメリット</h1><br/>
+
+        <div className={styles.description}>
+          <h1>会員登録のメリット</h1>
+          <br />
           <ul>
             <li>お気に入り登録できる</li>
             <li>ボタンひとつで完全決済</li>
             <li>旅程やチケットがアプリ一つに</li>
           </ul> 
+
         </div>
 
         <Link href="/register">
-        <button class="button">会員登録はこちら</button>
+          <button class="button">会員登録はこちら</button>
         </Link>
         <Link href="/login">
           <a>ログインはこちら</a>
         </Link>
       </main>
 
-      <footer className={styles.footer}>
-        
-      </footer>
+      <footer className={styles.footer}></footer>
     </div>
   )
 }
