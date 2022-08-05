@@ -4,7 +4,6 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-
 export default function SearchResult({ spots }) {
   return (
     <div className={styles.container}>
@@ -24,12 +23,12 @@ export default function SearchResult({ spots }) {
                 <p>{spot.time}</p>
               </div>
               <div className="spot_image">
-                <Image
-                  src={spots.description}
-                  alt={spots.name}
-                  width={200}
-                  height={200}
-                />
+                {/* <Image */}
+                {/*   src={`https://muit-travel-backend.herokuapp.com/${spot.picture}`} */}
+                {/*   alt={spot.name} */}
+                {/*   width={200} */}
+                {/*   height={200} */}
+                {/* /> */}
               </div>
               <p className="spot_description">{spot.description}</p>
             </div>
@@ -43,7 +42,7 @@ export default function SearchResult({ spots }) {
 export async function getServerSideProps(context) {
   const queryParams = new URLSearchParams(context.query)
   const spots = await fetch(
-    'http://backend:8000/api/routes/search?' + queryParams
+    'https://muit-travel-backend.herokuapp.com/api/routes/search?' + queryParams
   ).then((res) => res.json())
 
   return {
