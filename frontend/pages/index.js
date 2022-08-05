@@ -17,11 +17,11 @@ export default function Home() {
 
       <div className="top">
         <img src="top_image.jpeg" alt="Snow" width="100%"/>
-        <div class="centered">お一人様旅行をもっと手軽に</div>
+        <div class="centered">お一人様旅行をもっと手軽に。</div>
       </div>
         
         <p className={styles.description}>
-          1人で旅行に行きたいけど，計画するのが面倒．<br/>
+          1人で旅行に行きたいけど、計画するのが面倒。<br/>
           そう思ったら「にわか旅のしおり」を使ってみませんか？
         </p>
 
