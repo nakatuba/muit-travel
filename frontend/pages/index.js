@@ -13,21 +13,20 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <div className="top">
+          <Image src="top_image.jpeg" alt="Snow" width="100%" />
+          <div className="centered">お一人様旅行をもっと手軽に。</div>
+        </div>
 
-      <div className="top">
-        <img src="top_image.jpeg" alt="Snow" width="100%"/>
-        <div class="centered">お一人様旅行をもっと手軽に。</div>
-      </div>
-        
         <p className={styles.description}>
-          1人で旅行に行きたいけど、計画するのが面倒。<br/>
+          1人で旅行に行きたいけど、計画するのが面倒。
+          <br />
           そう思ったら「にわか旅のしおり」を使ってみませんか？
         </p>
 
         <Link href="/search">
-          <button class="button">検索してみる</button>
+          <button className="button">検索してみる</button>
         </Link>
-
 
         <div className={styles.description}>
           <h1>会員登録のメリット</h1>
@@ -36,12 +35,11 @@ export default function Home() {
             <li>お気に入り登録できる</li>
             <li>ボタンひとつで完全決済</li>
             <li>旅程やチケットがアプリ一つに</li>
-          </ul> 
-
+          </ul>
         </div>
 
         <Link href="/register">
-          <button class="button">会員登録はこちら</button>
+          <button className="button">会員登録はこちら</button>
         </Link>
         <Link href="/login">
           <a>ログインはこちら</a>
