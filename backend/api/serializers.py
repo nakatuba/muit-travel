@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User
 from rest_framework import serializers
 
-from .models import DestinationType, EventType, InnType, Route, Spot
+from .models import DestinationType, EventType, Route, Spot
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -12,10 +12,11 @@ class UserSerializer(serializers.ModelSerializer):
 
 class SpotSerializer(serializers.ModelSerializer):
     route = serializers.PrimaryKeyRelatedField(queryset=Route.objects.all())
+    time = serializers.TimeField('%H:%M')
 
     class Meta:
         model = Spot
-        fields = ['id', 'route', 'name', 'time', 'picture']
+        fields = ['id', 'route', 'name', 'time', 'picture', 'description']
 
 
 class RouteSerializer(serializers.ModelSerializer):
@@ -23,7 +24,7 @@ class RouteSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Route
-        fields = ['id', 'destination_type', 'event_type', 'inn_type', 'spots']
+        fields = ['id', 'destination_type', 'event_type', 'spots']
 
 
 class SearchRequestSerializer(serializers.Serializer):
@@ -31,4 +32,3 @@ class SearchRequestSerializer(serializers.Serializer):
         choices=DestinationType.choices, required=False
     )
     event_type = serializers.ChoiceField(choices=EventType.choices, required=False)
-    inn_type = serializers.ChoiceField(choices=InnType.choices, required=False)

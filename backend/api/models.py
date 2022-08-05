@@ -10,25 +10,13 @@ class DestinationType(models.TextChoices):
 class EventType(models.TextChoices):
     OUTDOOR = 'OUTDOOR', 'Outdoor'
     INDOOR = 'INDOOR', 'Indoor'
-    NATURE = 'NATURE', 'Nature'
-    ART = 'ART', 'Art'
-    EXPERIENCE = 'EXPERIENCE', 'Experience'
-    HOT_SPRING = 'HOT_SPRING', 'HotSpring'
-    SHRINES_TEMPLES = 'SHRINES_TEMPLES', 'ShrinesTemples'
     FOOD = 'FOOD', 'Food'
-    POWER_SPOT = 'POWER_SPOT', 'PowerSpot'
-
-
-class InnType(models.TextChoices):
-    HOTEL = 'HOTEL', 'Hotel'
-    RYOKAN = 'RYOKAN', 'Ryokan'
-    DORMITORY = 'DORMITORY', 'Domitory'
+    HOT_SPRING = 'HOT_SPRING', 'HotSpring'
 
 
 class Route(models.Model):
     destination_type = models.CharField(max_length=16, choices=DestinationType.choices)
     event_type = models.CharField(max_length=16, choices=EventType.choices)
-    inn_type = models.CharField(max_length=16, choices=InnType.choices)
 
 
 class Spot(models.Model):
@@ -36,3 +24,4 @@ class Spot(models.Model):
     name = models.CharField(max_length=16)
     time = models.TimeField()
     picture = models.ImageField()
+    description = models.TextField()
