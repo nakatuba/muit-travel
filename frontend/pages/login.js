@@ -12,18 +12,26 @@ export default function Login() {
             <link rel="icon" href="/logo.svg" />
             </Head>
             <main className={styles.main}>
-
+                
+                <form className="form">
+                <div>
+                <p>メールアドレス</p>
                 <p>
-                <input type="text" name="email" size="30" placeholder="メールアドレス"/>
+                <input type="email" name="email" size="30" placeholder="xxx@mail.com"/>
                 </p>
+                </div>
+                <div>
+                <p>パスワード</p>
                 <p>
-                <input type="text" name="password" size="30" placeholder="パスワード"/>
+                <input type="password" name="password" size="30" placeholder=""/>
                 </p>
-                <p>
+                </div>
+                <div className="center-button">
                 <Link href="/mypage">
                 <button class="button">ログイン</button>
                 </Link>
-                </p>
+                </div>
+                </form>
                 
             </main>
         </div>

@@ -29,14 +29,14 @@ export default function Home() {
         <button class="button">検索してみる</button>
         </Link>
 
-        <p className={styles.description}>{/*ここタグの関係おかしい　エラー出るので要修正 */}
+        <div className={styles.description}>{/*ここタグの関係おかしい　エラー出るので要修正 */}
           <h1>会員登録のメリット</h1><br/>
           <ul>
             <li>お気に入り登録できる</li>
             <li>ボタンひとつで完全決済</li>
             <li>旅程やチケットがアプリ一つに</li>
           </ul> 
-        </p>
+        </div>
 
         <Link href="/register">
         <button class="button">会員登録はこちら</button>

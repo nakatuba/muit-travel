@@ -16,7 +16,7 @@ export default function RegisterComplete() {
             <h1>会員登録が完了しました</h1>
 
             <Link href="/mypage">
-                <a>マイページへ</a>
+                <a className="textbutton">マイページへ</a>
             </Link>
 
             </main>
