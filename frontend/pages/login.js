@@ -20,7 +20,9 @@ export default function Login() {
                 <input type="text" name="password" size="30" placeholder="パスワード"/>
                 </p>
                 <p>
+                <Link href="/mypage">
                 <button class="button">ログイン</button>
+                </Link>
                 </p>
                 
             </main>

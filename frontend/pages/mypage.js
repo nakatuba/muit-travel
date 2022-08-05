@@ -12,8 +12,29 @@ export default function MyPage() {
             <link rel="icon" href="/logo.svg" />
             </Head>
             <main className={styles.main}>
-                
-
+            <div>
+                <h2>ようこそ、翔さん</h2>
+                <Link href="/search">
+                <button class="button">旅程を探す</button>
+                </Link>
+            </div>
+            <div className="mypage-content">
+            <div className="plan">
+                <h2>予約したプラン</h2>
+                <p>日程 8/5</p>
+                <p>旅行地 神奈川</p>
+                <p>金額 6500円</p>
+                <p>
+                    <Link href="/plan-detail">
+                    <a>プラン詳細</a>
+                    </Link>
+                </p>
+            </div>
+            <div className="fav">
+                <h2>お気に入りプラン</h2>
+                <p>アウトドア-神奈川</p>
+            </div>
+            </div>
             </main>
         </div>
     );
