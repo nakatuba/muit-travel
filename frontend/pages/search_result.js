@@ -13,17 +13,46 @@ export default function Search_result() {
             </Head>
             <main className={styles.main}>
                 <h2>提案されたプランはこちら</h2>
-                <div className="spot">スポット1
+                <div className="spot">
                     <div className="spot_time">
+                        <p>スポット1</p>
                         <p>到着時刻　10:00</p>
                         <p>出発時刻　12:00</p>
                     </div>
                     <div className="spot_image">
                         <Image src="/top_image.jpeg" width={200} height={200}/>
                     </div>
-                    <div className="spot_description">
+                    <p className="spot_description">
                         リフレッシュできます
+                    </p>
+                </div>
+                ↓電車で移動
+                <div className="spot">
+                    <div className="spot_time">
+                        <p>スポット2</p>
+                        <p>到着時刻　13:00</p>
+                        <p>出発時刻　17:00</p>
                     </div>
+                    <div className="spot_image">
+                        <Image src="/top_image.jpeg" width={200} height={200}/>
+                    </div>
+                    <p className="spot_description">
+                        リフレッシュできます
+                    </p>
+                </div>
+                ↓電車で移動
+                <div className="spot">
+                    <div className="spot_time">
+                        <p>スポット3</p>
+                        <p>到着時刻　18:00</p>
+                        <p>出発時刻　21:00</p>
+                    </div>
+                    <div className="spot_image">
+                        <Image src="/top_image.jpeg" width={200} height={200}/>
+                    </div>
+                    <p className="spot_description">
+                        リフレッシュできます
+                    </p>
                 </div>
             </main>
         </div>

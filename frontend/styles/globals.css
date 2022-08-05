@@ -41,6 +41,7 @@ html,
   cursor: pointer;
 }
 
+
 .register {
   text-align: center;
 }
@@ -67,6 +68,16 @@ html,
 label {
   display: block;
  }
+
+.spot {
+  display: flex;
+  flex-direction: row;
+}
+.spot_image {
+  margin: 20px;
+}
+
+
 
 body {
   padding: 0;
