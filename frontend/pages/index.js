@@ -15,12 +15,9 @@ export default function Home() {
 
       <main className={styles.main}>
 
-      
-
       <div className="top">
-        <h1 className={styles.title}>
-          お一人様旅行をもっと手軽に
-        </h1>
+        <img src="top_image.jpeg" alt="Snow" width="100%"/>
+        <div class="centered">お一人様旅行をもっと手軽に</div>
       </div>
         
         <p className={styles.description}>

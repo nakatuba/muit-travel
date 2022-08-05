@@ -15,15 +15,53 @@ export default function Register() {
 
                 <form>
                 <div class="register">
+                <label for="namelabel">名前</label>
                     <input type="text" name="first_name" id="first_name" placeholder="例）鈴木"/>
                     <input type="text" name="last_name" id="last_name" placeholder="例）太郎"/>
                 </div>
                 <div class="register">
-                    <input class="inputs" type="email" name="email" id="email" placeholder="○○○.jp"/>
+                <label for="emaillabel">emailアドレス</label>
+                    <input type="email" name="email" id="email" placeholder="○○○@△△△.jp"/>
+                </div>
+                <div class="register">
+                <label for="passwordlabel">パスワード</label>
+                    <input type="text" name="password" id="password" placeholder="パスワード"/>
+                </div>
+                <div class="register">
+                <label for="addresslabel">住所</label>
+                    <input type="text" name="postalcode" id="postalcode" placeholder="例）000-0000"/>
+                    <input type="text" name="address" id="address" size="50" placeholder="例）東京都〇〇市△△町□□マンション＊＊号室"/>
+                </div>
+                <div class="register">
+                <label for="tellabel">電話番号(ハイフンなし)</label>
+                    <input type="text" name="tel" id="tel" placeholder="00000000000"/>
+                </div>
+                <div class="register">
+                <label for="birthlabel">生年月日(半角英数)</label>
+                    <input type="text" name="birth" id="birth" minlength="8" maxlength="8" placeholder="20220805"/>
                 </div>
                 <p>
-                <button class="button">送信</button>
+
                 </p>
+                <div class="register">
+                <label for="cardlabel">カード番号</label>
+                    <input type="text" name="card" id="card" placeholder="0123456789"/>
+                </div>
+                <div class="register">
+                <label for="expiredatelabel">有効期限（年/月）</label>
+                    <input type="text" name="expireyear" id="expireyear" maxlength="2" placeholder="22"/>
+                    <a>/</a>
+                    <input type="text" name="expiremonth" id="expiremonth" maxlength="2" placeholder="08"/>
+                </div>
+                <div class="register">
+                <label for="securitylabel">セキュリティコード</label>
+                    <input type="text" name="security" id="security" placeholder="0123"/>
+                </div>
+                <div class="register">
+                <Link href="/registercomplete">
+                <button class="button">送信</button>
+                </Link>
+                </div>
                 </form>
 
             </main>
