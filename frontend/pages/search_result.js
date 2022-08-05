@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
+
 export default function SearchResult({ spots }) {
   return (
     <div className={styles.container}>
