@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Link from 'next/link';
-
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -14,41 +13,40 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <div className="top">
+          <img src="top_image.jpeg" alt="Snow" width="100%" />
+          <div class="centered">お一人様旅行をもっと手軽に</div>
+        </div>
 
-      <div className="top">
-        <img src="top_image.jpeg" alt="Snow" width="100%"/>
-        <div class="centered">お一人様旅行をもっと手軽に</div>
-      </div>
-        
         <p className={styles.description}>
-          1人で旅行に行きたいけど，計画するのが面倒．<br/>
+          1人で旅行に行きたいけど，計画するのが面倒．
+          <br />
           そう思ったら「にわか旅のしおり」を使ってみませんか？
         </p>
 
         <Link href="/search">
-        <button class="button">検索してみる</button>
+          <button class="button">検索してみる</button>
         </Link>
 
-        <p className={styles.description}>{/*ここタグの関係おかしい　エラー出るので要修正 */}
-          <h1>会員登録のメリット</h1><br/>
+        <div className={styles.description}>
+          <h1>会員登録のメリット</h1>
+          <br />
           <ul>
             <li>お気に入り登録できる</li>
             <li>ボタンひとつで完全決済</li>
             <li>旅程やチケットがアプリ一つに</li>
-          </ul> 
-        </p>
+          </ul>
+        </div>
 
         <Link href="/register">
-        <button class="button">会員登録はこちら</button>
+          <button class="button">会員登録はこちら</button>
         </Link>
         <Link href="/login">
           <a>ログインはこちら</a>
         </Link>
       </main>
 
-      <footer className={styles.footer}>
-        
-      </footer>
+      <footer className={styles.footer}></footer>
     </div>
   )
 }
