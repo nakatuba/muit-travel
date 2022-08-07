@@ -24,7 +24,7 @@ export default function SearchResult({ spots }) {
               </div>
               <div className="spot_image">
                 {/* <Image */}
-                {/*   src={`https://muit-travel-backend.herokuapp.com/${spot.picture}`} */}
+                {/*   src={`https://muit-travel-backend.herokuapp.com${spot.picture}`} */}
                 {/*   alt={spot.name} */}
                 {/*   width={200} */}
                 {/*   height={200} */}
