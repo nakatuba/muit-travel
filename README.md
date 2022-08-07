@@ -1,5 +1,7 @@
 # muit-travel
 
+三菱UFJインフォメーションテクノロジー「新規事業創出ハッカソン」
+
 ## frontend
 ```
 docker-compose run --rm frontend npm install
@@ -12,7 +14,7 @@ SECRET_KEY=xxxx
 DEBUG=True
 ```
 
-## Start containers
+## start containers
 ```
 docker-compose up -d
 ```
