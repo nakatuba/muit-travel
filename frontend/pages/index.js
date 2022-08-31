@@ -13,10 +13,10 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        {/* <div className="top"> */}
-        {/*   <img src="top_image.jpeg" alt="Snow" width="100%" /> */}
-        {/*   <div className="centered">お一人様旅行をもっと手軽に。</div> */}
-        {/* </div> */}
+        <div className="top">
+          <Image src="top_image.jpeg" alt="Snow" width="100%" height={100} />
+          <div className="centered">お一人様旅行をもっと手軽に。</div>
+        </div>
 
         <p className={styles.description}>
           1人で旅行に行きたいけど、計画するのが面倒。
