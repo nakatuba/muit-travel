@@ -23,12 +23,12 @@ export default function SearchResult({ spots }) {
                 <p>{spot.time}</p>
               </div>
               <div className="spot_image">
-                {/* <Image */}
-                {/*   src={`https://muit-travel-backend.herokuapp.com${spot.picture}`} */}
-                {/*   alt={spot.name} */}
-                {/*   width={200} */}
-                {/*   height={200} */}
-                {/* /> */}
+                {/* <Image
+                src={`https://muit-travel-backend.herokuapp.com${spot.picture}`}
+                alt={spot.name}
+                width={200}
+                height={200}
+                /> */}
               </div>
               <p className="spot_description">{spot.description}</p>
             </div>
