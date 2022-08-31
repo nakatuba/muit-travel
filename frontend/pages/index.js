@@ -14,7 +14,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className="top">
-          <Image src="top_image.jpeg" alt="Snow" width="100%" height={100} />
+          <Image src="top_image.jpeg" alt="Snow" width={1000} height={400} />
           <div className="centered">お一人様旅行をもっと手軽に。</div>
         </div>
 
